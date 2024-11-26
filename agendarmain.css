@@ -1,0 +1,135 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+    margin-top: -500px; /* Mueve la sección hacia arriba */
+}
+
+/* Title Section */
+.title-box {
+    margin-bottom: 20px;
+}
+
+.title-box-name {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #007bff;
+    text-align: center;
+}
+
+.title-box-text {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.title-separator {
+    width: 80px;
+    height: 4px;
+    background-color: #007bff;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+/* Services List */
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.services-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.item-icon img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.item-title {
+    font-size: 1.2em;
+    color: #007bff;
+    margin: 10px 0;
+}
+
+.services-item p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Button */
+.services-main-btn button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #007bff;
+    border: 2px solid #007bff;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.services-main-btn button:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+/* Hacer que todo el cuadro sea un botón */
+.services-item {
+    display: block; /* Convierte el enlace en un elemento de bloque */
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: inherit; /* Hereda el color del texto */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.services-item .item-icon img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.services-item .item-title {
+    font-size: 1.2em;
+    color: #007bff;
+    margin: 10px 0;
+}
+
+.services-item p {
+    font-size: 1em;
+    color: #555;
+}
+

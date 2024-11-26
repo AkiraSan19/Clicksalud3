@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="agendarmain.css">
+    <script>
+        // Función para guardar la especialidad seleccionada
+        function guardarSeleccion(especialidad) {
+            localStorage.setItem('especialidadSeleccionada', especialidad);
+        }
+    </script>
+</head>
+<body>
+<main>
+    <section class = "sc-services">
+        <div class = "services-shape">
+            <img src = "images/curve-shape-1.png" alt = "">
+        </div>
+        <div class="container">
+            <div class = "services-content">
+                <div class="title-box text-center">
+                    <div class = "content-wrapper">
+                        <h3 class = "title-box-name">Selecciona una especialidad</h3>
+                        <div class = "title-separator mx-auto"></div>
+                        <p class = "text title-box-text">Elija el área médica que necesita para agendar su cita con especialistas confiables y recibir la mejor atención.</p>
+                    </div>
+                </div>
+
+                <div class = "services-list">
+                    <a href="calendario.html" class="services-item" onclick="guardarSeleccion('Medicina General')">
+
+                        <h5 class="item-title fw-7">Medicina General</h5>
+                        <p class="text">Atención integral para chequeos, diagnósticos y cuidado continuo.</p>
+                    </a>
+
+
+                    <a href="calendario.html" class="services-item" onclick="guardarSeleccion('Pediatría')">
+
+                        <h5 class="item-title fw-7">Pediatría</h5>
+                        <p class="text">Especialistas en salud infantil para el bienestar de los niños.</p>
+                    </a>
+
+                    <a href="calendario.html" class="services-item" onclick="guardarSeleccion('Ginecología')">
+
+                        <h5 class="item-title fw-7">Ginecología</h5>
+                        <p class="text">Cuida tu salud femenina con atención personalizada.</p>
+                    </a>
+
+                    <a href="calendario.html" class="services-item" onclick="guardarSeleccion('Psiquiatría')">
+
+                        <h5 class="item-title fw-7">Psiquiatría</h5>
+                        <p class="text">Apoyo profesional para tu salud emocional y mental.</p>
+                    </a>
+
+                    <a href="calendario.html" class="services-item" onclick="guardarSeleccion('Odontología')">
+
+                        <h5 class="item-title fw-7">Odontología</h5>
+                        <p class="text">Tratamientos dentales para una sonrisa saludable.</p>
+                    </a>
+
+                    <a href="calendario.html" class="services-item" onclick="guardarSeleccion('Oftalmología')">
+
+                        <h5 class="item-title fw-7">Oftalmología</h5>
+                        <p class="text">Cuida y mejora tu visión con expertos en salud ocular.</p>
+                    </a>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-center services-main-btn">
+                    <button type="button" class="btn btn-primary-outline" onclick="window.location.href='index.html';">Atrás</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+</main>
+
+</body>
+</html>

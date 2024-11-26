@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+    margin-top: -500px; /* Mueve la sección hacia arriba */
+}
+
+/* Title Section */
+.title-box {
+    margin-bottom: 20px;
+}
+
+.title-box-name {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #007bff;
+    text-align: center;
+}
+
+.title-box-text {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.title-separator {
+    width: 80px;
+    height: 4px;
+    background-color: #007bff;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+/* Services List */
+/* Centrar el contenedor de servicio en la pantalla */
+.services-list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Cambiado de 'center' a 'flex-start' */
+    height: 100vh; /* Mantener el contenedor en el alto total de la pantalla */
+    padding-top: 50px; /* Esto mueve el bloque hacia abajo */
+    margin-bottom: 0;
+}
+
+
+/* Estilo para el bloque de servicio (ticket) */
+.services-item {
+    width: 300px; /* Ancho fijo */
+    height: 300px; /* Alto fijo para hacer un cuadrado */
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #007bff; /* Borde con color */
+}
+
+/* Estilo del botón */
+.services-main-btn {
+    display: flex;
+    justify-content: center;  /* Centra el botón horizontalmente */
+    align-items: flex-start;  /* Alinea el botón hacia la parte superior */
+    height: auto;  /* Asegura que ocupe toda la altura de la pantalla */
+    margin-top: -500px;
+}
+.services-main-btn button {
+
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #007bff;
+    border: 2px solid #007bff;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Efecto hover del botón */
+.services-main-btn button:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Hacer que todo el cuadro sea un botón */
+.services-item {
+    display: block; /* Hace que el item sea un enlace de bloque */
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: inherit; /* Hereda el color del texto */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover */
+.services-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Icono dentro del item */
+.services-item .item-icon img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Título del item */
+.services-item .item-title {
+    font-size: 1.2em;
+    color: #007bff;
+    margin: 10px 0;
+}
+
+/* Descripción del item */
+.services-item p {
+    font-size: 1em;
+    color: #555;
+}
+

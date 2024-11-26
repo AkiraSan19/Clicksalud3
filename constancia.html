@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Confirmación de cita</title>
+  <link rel="stylesheet" href="constancia.css">
+  <script>
+    // Función para mostrar la información de la especialidad y el doctor
+    function mostrarInformacion() {
+      // Recuperar los valores guardados en localStorage
+      const especialidad = localStorage.getItem('especialidadSeleccionada');
+      const doctor = localStorage.getItem('doctorSeleccionado');
+      const fecha = localStorage.getItem('fechaSeleccionada');
+
+      // Verificar si se han guardado los datos
+      if (especialidad && doctor) {
+        // Mostrar la información en los elementos correspondientes
+        document.getElementById('informacion-especialidad').innerText = `Especialidad seleccionada: ${especialidad}`;
+        document.getElementById('informacion-doctor').innerText = `Doctor seleccionado: ${doctor}`;
+        document.getElementById('informacion-fecha').innerText = `Fecha seleccionada: ${localStorage.getItem('fechaSeleccionada')}`;
+      } else {
+        // Si no hay información guardada, mostrar un mensaje por defecto
+        document.getElementById('informacion-especialidad').innerText = 'No se ha seleccionado ninguna especialidad.';
+        document.getElementById('informacion-doctor').innerText = 'No se ha seleccionado ningún doctor.';
+      }
+    }
+    window.onload = function () {
+      // Obtener la fecha almacenada
+      const fechaSeleccionada = localStorage.getItem("fechaSeleccionada");
+
+      // Verificar si hay fecha seleccionada y mostrar el mensaje correspondiente
+      const mensaje = fechaSeleccionada
+              ? `Fecha seleccionada: ${fechaSeleccionada}`
+              : "No se ha seleccionado ninguna fecha.";
+
+      // Mostrar la fecha en el elemento con el id "informacion-fecha"
+      document.getElementById("informacion-fecha").innerText = mensaje;
+    };
+
+    // Llamar la función cuando la página se haya cargado
+    window.onload = function() {
+      mostrarInformacion();
+    };
+  </script>
+</head>
+<body>
+<main>
+  <section class="sc-services">
+    <div class="services-shape">
+      <img src="images/curve-shape-1.png" alt="">
+    </div>
+    <div class="container">
+      <div class="services-content">
+        <div class="title-box text-center">
+          <div class="content-wrapper">
+            <h3 class="title-box-name">Has agendado con éxito tu cita</h3>
+            <div class="title-separator mx-auto"></div>
+            <p class="text title-box-text">¡Tu cita ha sido confirmada exitosamente! Ahora podrás recibir la atención que necesitas en el horario y con el doctor de tu elección.</p>
+          </div>
+        </div>
+
+        <div class="services-list">
+          <a class="services-item">
+            <h5 class="item-title fw-7">Constancia de cita</h5>
+            <!-- Aquí se imprimirá la información -->
+            <p class="text" id="informacion-especialidad">Especialidad seleccionada: </p>
+            <p class="text" id="informacion-doctor">Doctor seleccionado: </p>
+            <p id="informacion-fecha">Cargando...</p>
+
+          </a>
+        </div>
+
+        <div class="d-flex align-items-center justify-content-center services-main-btn">
+          <button type="button" class="btn btn-primary-outline" onclick="window.location.href='index.html';">Inicio</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+</body>
+</html>

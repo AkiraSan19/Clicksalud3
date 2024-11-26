@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="agendarmain.css">
+  <script>
+    // Función para guardar la especialidad seleccionada
+    function guardarSeleccion(doctor) {
+      localStorage.setItem('doctorSeleccionado', doctor);
+    }
+  </script>
+</head>
+<body>
+<main>
+  <section class = "sc-services">
+    <div class = "services-shape">
+      <img src = "images/curve-shape-1.png" alt = "">
+    </div>
+    <div class="container">
+      <div class = "services-content">
+        <div class="title-box text-center">
+          <div class = "content-wrapper">
+            <h3 class = "title-box-name">Selecciona un doctor</h3>
+            <div class = "title-separator mx-auto"></div>
+            <p class = "text title-box-text">Elige al especialista de tu preferencia para recibir la atención médica que necesitas con confianza y comodidad.</p>
+          </div>
+        </div>
+
+        <div class = "services-list">
+          <a href="constancia.html" class="services-item" onclick="guardarSeleccion('Dr. Alejandro Torres')">
+
+            <h5 class="item-title fw-7">Dr. Alejandro Torres</h5>
+            <p class="text">Universidad Nacional Autónoma de México, 12 años en la práctica médica.</p>
+          </a>
+
+
+          <a href="constancia.html" class="services-item" onclick="guardarSeleccion('Dra. Mariana López')">
+
+            <h5 class="item-title fw-7">Dra. Mariana López</h5>
+            <p class="text">Pontificia Universidad Javeriana, Colombia, 8 años atendiendo pacientes con excelencia.</p>
+          </a>
+
+          <a href="constancia.html" class="services-item" onclick="guardarSeleccion('Dr. Javier Castillo')">
+
+            <h5 class="item-title fw-7">Dr. Javier Castillo</h5>
+            <p class="text">Universidad de Buenos Aires, 10 años ofreciendo atención especializada.</p>
+          </a>
+
+          <a href="constancia.html" class="services-item" onclick="guardarSeleccion('Dra. Sofía Méndez')">
+
+            <h5 class="item-title fw-7">Dra. Sofía Méndez</h5>
+            <p class="text">Universidad de Barcelona, 7 años como profesional en su campo.</p>
+          </a>
+
+          <a href="constancia.html" class="services-item" onclick="guardarSeleccion('Dr. Ricardo Fernández')">
+
+            <h5 class="item-title fw-7">Dr. Ricardo Fernández</h5>
+            <p class="text">Universidad de Chile, 15 años brindando cuidado médico de calidad.</p>
+          </a>
+
+          <a href="constancia.html" class="services-item" onclick="guardarSeleccion('Dra. Camila Rojas')">
+
+            <h5 class="item-title fw-7">Dra. Camila Rojas</h5>
+            <p class="text">Universidad Autónoma de Madrid, 9 años trabajando en atención personalizada.</p>
+          </a>
+        </div>
+
+        <div class="d-flex align-items-center justify-content-center services-main-btn">
+          <button type="button" class="btn btn-primary-outline" onclick="window.location.href='calendario.html';">Atrás</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+</main>
+
+</body>
+</html>
